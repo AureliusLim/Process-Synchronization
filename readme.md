@@ -1,9 +1,9 @@
 # Process Synchronization
 ## Developed by:
--Lim, Aurelius
--Sze, Gelson
--Umpad, Sean
--Yongco, Denzel
+- Lim, Aurelius
+- Sze, Gelson
+- Umpad, Sean
+- Yongco, Denzel
 
 Input
 The program accepts three inputs from the user.
