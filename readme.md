@@ -5,14 +5,17 @@
 - Umpad, Sean
 - Yongco, Denzel
 
-Input
+### Input
 The program accepts three inputs from the user.
 
 n – the number of slots inside the fitting room
+
 b – number of blue threads
+
 g – number of green threads
-Output
-The output of the program should be a simulation that includes the following:
+
+### Output
+The output of the program is a simulation that includes the following:
 
 When a blue thread is the first to enter an empty fitting room, the thread should print the string “Blue only.”
 When a green thread is the first to enter an empty fitting room, the thread should print the string “Green only.”
