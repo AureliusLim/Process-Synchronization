@@ -76,8 +76,16 @@ def fitting_room_simulation(fitting_room, thread_id, color):
         fitting_room.exit_room(thread_id, color)
 
 if __name__ == "__main__":
-    n = int(input("Enter the number of slots inside the fitting room: "))
-    b = int(input("Enter the number of blue threads: "))
-    g = int(input("Enter the number of green threads: "))
+
+    valid = False
+    while(not valid):
+        try:
+            n = int(input("Enter the number of slots inside the fitting room: "))
+            b = int(input("Enter the number of blue threads: "))
+            g = int(input("Enter the number of green threads: "))
+
+            valid = True
+        except ValueError:
+            print("Invalid Input: Only integer inputs allowed")
 
     simulate_fitting_room(n, b, g)
