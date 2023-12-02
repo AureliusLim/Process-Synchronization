@@ -81,9 +81,18 @@ if __name__ == "__main__":
     while(not valid):
         try:
             n = int(input("Enter the number of slots inside the fitting room: "))
+
+            if(n == 0):
+                print("Invalid Input: Cannot accomodate 0 slots inside fitting room")
+                continue
+
             b = int(input("Enter the number of blue threads: "))
             g = int(input("Enter the number of green threads: "))
 
+            if(n<0 or b<0 or g<0 ):
+                print("Invalid Input: Cannot accomodate negative inputs")
+                continue
+            
             valid = True
         except ValueError:
             print("Invalid Input: Only integer inputs allowed")
